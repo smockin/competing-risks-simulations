@@ -148,4 +148,6 @@ LosModels<<- split(dsToUse, dsToUse$los) %>%
   })->tobind
 tobind<- tobind %>% do.call(rbind,.)
 LosModels<- tobind
+save(LosModels, file="cache/model data generating values.rda")
+
 
